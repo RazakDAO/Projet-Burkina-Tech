@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Untitled Gantt Project retro planing 1" company="site web burkina tech" webLink="http://" view-date="2023-04-11" view-index="0" gantt-divider-location="351" resource-divider-location="300" version="3.2.3247" locale="fr_FR">
+    <description>
+        <![CDATA[projet de maquettage et de conception de site web burkina tech
+]]>
+    </description>
+    <view zooming-state="default:2" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="200" order="0"/>
+        <field id="tpd4" name="Date de début" width="75" order="1"/>
+        <field id="tpd5" name="Date de fin" width="75" order="2"/>
+        <option id="taskLabelUp" value="name"/>
+        <option id="taskLabelDown" value="resources"/>
+        <option id="taskLabelLeft" value="taskDates"/>
+        <option id="taskLabelRight" value="length"/>
+        <option id="filter.completedTasks" value="false"/>
+        <option id="color.recent">
+            <![CDATA[#ffcc99 #9933ff #ffccff #cc66ff #cc00cc]]>
+        </option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="210" order="0"/>
+        <field id="1" name="Rôle par défaut" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+        <date year="2023" month="4" date="18" type="WORKING_DAY" color="#cc00cc"/>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="4" name="Creation du cahier de charge" color="#8cb6ce" meeting="false" start="2023-04-18" duration="1" complete="100" thirdDate="2023-04-18" thirdDate-constraint="1" expand="true">
+            <notes>
+                <![CDATA[cette etape consiste a se donner des idées sur la repartitions du travails et ensuite pour le reste du projet]]>
+            </notes>
+            <depend id="5" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="5" name="maquetage" color="#9933ff" meeting="false" start="2023-04-19" duration="1" complete="0" thirdDate="2023-04-19" thirdDate-constraint="1" expand="true">
+            <depend id="6" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="6" name="modelisation et conception" color="#ffcc99" meeting="false" start="2023-04-20" duration="4" complete="0" thirdDate="2023-04-20" thirdDate-constraint="1" priority="2" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="KABORE Yann" function="SoftwareDevelopment:2" contacts="" phone="62565661"/>
+        <resource id="1" name="DAO Razack" function="SoftwareDevelopment:5" contacts="72420127" phone=""/>
+        <resource id="2" name="OUEDRAOGO Odile" function="SoftwareDevelopment:2" contacts="" phone="78430888"/>
+    </resources>
+    <allocations>
+        <allocation task-id="6" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="4" resource-id="1" function="SoftwareDevelopment:5" responsible="true" load="100.0"/>
+        <allocation task-id="5" resource-id="1" function="SoftwareDevelopment:5" responsible="true" load="100.0"/>
+        <allocation task-id="6" resource-id="1" function="SoftwareDevelopment:5" responsible="false" load="100.0"/>
+        <allocation task-id="4" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="6" resource-id="2" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
